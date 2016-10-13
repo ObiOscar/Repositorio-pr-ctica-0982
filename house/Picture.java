@@ -65,7 +65,7 @@ public class Picture
        suelo.makeVisible();
        
        
-       sun.slowMoveVertical(100);
+      // sun.slowMoveVertical(100); //El sol se mueve
        
     
        
