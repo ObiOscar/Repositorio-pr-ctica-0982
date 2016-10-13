@@ -15,6 +15,7 @@ public class Picture
     private Square window;
     private Triangle roof;
     private Circle sun;
+    
    
     private Square suelo;
 
@@ -22,7 +23,8 @@ public class Picture
      * Constructor for objects of class Picture
      */
     public Picture()
-    {
+    { 
+   
         // nothing to do... instance variables are automatically set to null
     }
 
@@ -66,6 +68,7 @@ public class Picture
        
        
       // sun.slowMoveVertical(100); //El sol se mueve
+     
        
     
        
@@ -98,4 +101,13 @@ public class Picture
             sun.changeColor("yellow");
         }
     }
+    
+    /**
+     * El sol se mueva
+     */
+    public void moveSun()
+    {
+       sun.slowMoveVertical(100); //Se mueve el sol cuando lo invoco
+    }
+    
 }
