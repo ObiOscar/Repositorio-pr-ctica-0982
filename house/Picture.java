@@ -108,6 +108,12 @@ public class Picture
     public void moveSun()
     {
        sun.slowMoveVertical(100); //Se mueve el sol cuando lo invoco
+            suelo.changeColor("black");
+            sun.changeColor("black");
+            wall.changeColor("black");
+            window.changeColor("white");
+            roof.changeColor("black");
+    
     }
     
 }
