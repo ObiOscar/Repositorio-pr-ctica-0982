@@ -15,10 +15,12 @@ public class Picture
     private Square window;
     private Triangle roof;
     private Circle sun;
+   
     
    
     private Square suelo;
-
+    private Person persona;
+    
     /**
      * Constructor for objects of class Picture
      */
@@ -115,5 +117,14 @@ public class Picture
             roof.changeColor("black");
     
     }
+    
+    public void movePerson()
+    {
+        persona = new Person();
+        persona.moveHorizontal(-240);
+        persona.moveVertical(29);
+        persona.makeVisible();
+        persona.slowMoveHorizontal(100);
+    } 
     
 }
